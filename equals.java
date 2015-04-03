@@ -1,4 +1,4 @@
-  class equals implements ActionListener
+ public class equals implements ActionListener
         {
             Calc c;
             Button b;

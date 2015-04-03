@@ -1,4 +1,4 @@
-class digit implements ActionListener
+public class digit implements ActionListener
         {
             Button b;
             Calc c;

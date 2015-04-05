@@ -1,3 +1,5 @@
+package com.apps.calculator;
+
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;

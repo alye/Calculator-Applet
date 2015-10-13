@@ -1,7 +1,15 @@
 /**
  * A simple Calculator applet implemented using Java.
  * @author Alizishaan Khatri
- * Please include the following code snippet in a HTML file to run the app:
+ * 
+ * It containts two types of buttons: digits and signs
+ * The digit class contains the code that is executed when any numerical key is pressed.
+ * The op class contains the code that is executed when a button corresponding to a mathematical
+ * operator(+,-,* or /) is pressed.
+ * The AC class contains code that is executed when the AC button is pressed
+ * The equals class contains code that is executed when the equals button is pressed
+ * 
+ * Please paste the following code snippet in a HTML file to run the app:
  * <APPLET
  * 	CODE=Calc.class
  * 	HSPACE=700
@@ -21,9 +29,9 @@ import java.awt.event.*;
 */
 public class Calc extends Applet
 {
-    private TextField t;		//Text Field Object to display the calculator's workspace
-    private double d=0;
-    private String s;			
+    private TextField t;		    //Text Field Object to display the calculator's workspace
+    private double d=0;             //Field to store operand 1
+    private String s;			    //Field to store sign
     private Button b[],sign[];		//Arrays to store the number and sign buttons
 
     /** Method called to instantiate the applet
@@ -62,7 +70,8 @@ public class Calc extends Applet
     //Loop to add each button to the layout
     for(int i=0;i<=5;i++)
         add(sign[i]);
-    //Loop to add listeners to the Operators (+,-,* and /)
+        
+    //Loop to add listeners to the Mathematical Operators (+,-,* and /)
     for(int i=0;i<=3;i++)
         sign[i].addActionListener(new op(this,sign[i]));
 
@@ -73,10 +82,7 @@ public class Calc extends Applet
     //Display author information
     add(new Label("-Alizishaan Khatri",Label.CENTER));
 
-   
-     }
-
-    
+    }
 }
 
         

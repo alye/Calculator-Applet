@@ -10,7 +10,7 @@ public class digit implements ActionListener
             private Button b;           //Local Instance of Button created to store reference to the respective Digit Button
             /**
              * Constructor to load the private variables of digit class
-             * @param Calc A reference to the Calc class which contains the Digit Buttons
+             * @param Calc A reference to the Calc class which contains the digit Buttons
              * @param Button A reference to the Digit Button for which the listener is being implemented
              * @return Void/No return Value
              * @exception Any Exception
@@ -22,7 +22,7 @@ public class digit implements ActionListener
             }
            /** 
              * Implementing actionPerformed(ActionEvent) method of ActionListener interface.
-             * Specifies steps to be taken when AC button is clicked
+             * Specifies steps to be taken when a digit button is clicked
              * @param ActionEvent A semantic event which indicates that a component-defined action occurred.It is generated
              * by a Button when the component-specific action occurs (such as being pressed). 
              * @return Void/No return Value

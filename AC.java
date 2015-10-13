@@ -26,7 +26,7 @@
      * @exception Any Exception
      */
      public void actionPerformed(ActionEvent e)
-    {
+     {
         if(e.getSource()==b)
         {
                 /** 
@@ -37,5 +37,5 @@
                 c.t.setText("0");
         }
             
-    }
+     }
 }

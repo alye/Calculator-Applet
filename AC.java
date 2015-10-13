@@ -3,20 +3,26 @@
  */
  public class AC implements ActionListener
 {
-    private Calc c;                     //Local Instance of Calc created to store reference to the calling class
-    private Button b;                   //Local Instance of Button created to store reference to the Ac
+    private Calc c;                     //Local Instance of Calc created to store reference to the class on which AC has to be performed
+    private Button b;                   //Local Instance of Button created to store reference to the AC button of the Calc instance
     /**
      * Constructor to pass instance of the calling Calc class to the AC class
+     * @param Calc A reference to the Calc class on which the AC operation has to be performed
+     * @return Void/No return Value
+     * @exception Any Exception
      */
     AC(Calc x)                          
     {
         c=x;
-        b=c.sign[5];
+        b=c.sign[5];                    //Initialize local Button value with that of the class on which AC is being performed
     }
     
     /** 
      * Implementing actionPerformed(ActionEvent) method of ActionListener interface.
      * Specifies steps to be taken when AC button is clicked
+     * @param ActionEvent A reference to the Calc class on which the AC operation has to be performed
+     * @return Void/No return Value
+     * @exception Any Exception
      */
      public void actionPerformed(ActionEvent e)
     {

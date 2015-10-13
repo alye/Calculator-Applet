@@ -7,6 +7,7 @@ public class op implements ActionListener
  {
    private Calc c;            //Local Instance of Calc created to store reference to the class containing operands
    private Button b;          //Local Instance of Button created to store reference to the respective '=' Button
+   
    /**
      * Constructor to load the private variables of op class
      * @param Calc A reference to the Calc class which contains the operators
@@ -19,6 +20,7 @@ public class op implements ActionListener
          c=x;
          b=y;
      }
+     
      /** 
      * Implementing actionPerformed(ActionEvent) method of ActionListener interface.
      * Specifies steps to be taken when an operator button is clicked

@@ -60,7 +60,7 @@ public class Calc extends Applet
         add(sign[i]);
     //Loop to add listeners to the Operators (+,-,* and /)
     for(int i=0;i<=3;i++)
-    sign[i].addActionListener(new op(this,sign[i]));
+        sign[i].addActionListener(new op(this,sign[i]));
 
     //Adding Listeners to the '=' and 'AC' buttons
     sign[4].addActionListener(new equals(this));

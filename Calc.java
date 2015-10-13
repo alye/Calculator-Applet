@@ -1,5 +1,6 @@
 /**
  * A simple Calculator applet implemented using Java.
+ * @author Alizishaan Khatri
  * Please include the following code snippet in a HTML file to run the app:
  * <APPLET
  * 	CODE=Calc.class
@@ -25,7 +26,10 @@ public class Calc extends Applet
     private String s;			
     private Button b[],sign[];		//Arrays to store the number and sign buttons
 
-    /* Method called to instantiate the applet 
+    /** Method called to instantiate the applet
+     * @param None
+     * @return No Return Value
+     * @exception Any Exception
     */
     public void init()
     {

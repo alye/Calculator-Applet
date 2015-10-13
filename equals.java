@@ -18,6 +18,15 @@
        c=x;
        b=c.sign[4];
      }
+     
+     /** 
+     * Implementing actionPerformed(ActionEvent) method of ActionListener interface.
+     * Specifies steps to be taken when the equals button is clicked
+     * @param ActionEvent A semantic event which indicates that a component-defined action occurred.It is generated 
+     * by a Button when the component-specific action occurs (such as being pressed). 
+     * @return Void/No return Value
+     * @exception Any Exception
+     */
      public void actionPerformed(ActionEvent e)
      {
         if(e.getSource()==b)

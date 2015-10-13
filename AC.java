@@ -20,7 +20,8 @@
     /** 
      * Implementing actionPerformed(ActionEvent) method of ActionListener interface.
      * Specifies steps to be taken when AC button is clicked
-     * @param ActionEvent A reference to the Calc class on which the AC operation has to be performed
+     * @param ActionEvent A semantic event which indicates that a component-defined action occurred.It is generated 
+     * by a Button when the component-specific action occurs (such as being pressed). 
      * @return Void/No return Value
      * @exception Any Exception
      */
@@ -29,7 +30,7 @@
         if(e.getSource()==b)
         {
                 /** 
-                 * Clear memory of parent class
+                 * Clear memory and display
                  */
                 c.d=0;
                 c.s="";
